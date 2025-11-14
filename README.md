@@ -9,10 +9,10 @@
 - If you are using Magisk or something similar, your system files are mounted in atomic/magic mount. If you are restoring your manifest.xml manually without mirror/original paths in boot mode (except via TWRP), you will even potentially lose your manifest.xml resulting in a bootloop/softbrick, so this script helps you to restore it in the right paths (mirror/original paths).
 
 ## Requirements
-- Magisk or KernelSU installed
+- Magisk or Kitsune Mask or KernelSU or Apatch installed
 
 ## Installation Guide & Download Link
-- Install this script https://www.pling.com/p/2187441/ via Magisk app or KernelSU app or Recovery if Magisk installed
+- Install this script https://www.pling.com/p/2187441/ via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
 
 ## Optionals
 - Global: https://t.me/ryukinotes/35

@@ -62,6 +62,10 @@ FILES="$SYSTEM/etc/vintf/manifest.xml
        $SYSTEM/manifest.xml
        $VENDOR/manifest.xml
        $SYSTEM_EXT/manifest.xml"
+if [ "$MIRROR" ]\
+&& ! grep -q " $MIRROR" /proc/mounts; then
+  FILES=`echo "$FILES" | sed -e "s|$MIRROR||g" -e 's|/system_root||g'`
+fi
 restore
 rm -f /*/early-mount.d/system/etc/vintf/manifest.xml\
  /mnt/vendor/persist/early-mount.d/system/etc/vintf/manifest.xml\
