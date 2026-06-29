@@ -58,6 +58,11 @@ if [ "$BOOTMODE" != true ]; then
     mount -o rw -t auto $BLOCK$DIR $DIR\
     || mount -o rw -t auto $BLOCK2$DIR $DIR
   fi
+  DIR=/klogdump
+  if [ -d $DIR ] && ! is_mounted $DIR; then
+    mount -o rw -t auto $BLOCK$DIR $DIR\
+    || mount -o rw -t auto $BLOCK2$DIR $DIR
+  fi
 fi
 }
 get_device() {

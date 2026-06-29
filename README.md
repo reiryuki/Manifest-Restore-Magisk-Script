@@ -8,17 +8,26 @@
 - For example, if you have installed Dolby modules that requires manifest.xml patch and backs-up your original manifest.xml to manifest.xml.orig, it will not restore your original manifest.xml (manifest.xml.orig) if you remove/uninstall the Dolby modules, so you can use this Magisk script to restore your original manifest.xml after you have removed/uninstalled the Dolby modules.
 - If you are using Magisk or something similar, your system files are mounted in atomic/magic mount. If you are restoring your manifest.xml manually without mirror/original paths in boot mode (except via TWRP), you will even potentially lose your manifest.xml resulting in a bootloop/softbrick, so this script helps you to restore it in the right paths (mirror/original paths).
 
+## Changelog
+
+v0.2
+- Abort if fail to mount mirror system
+- Fix wrong file target in latest Magisk version
+
+v0.1
+- Initial release
+
 ## Requirements
-- Magisk or Kitsune Mask or KernelSU or Apatch installed
+Magisk or Kitsune Mask or KernelSU or Apatch installed
 
 ## Installation Guide & Download Link
-- Install this script https://www.pling.com/p/2187441/ via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
+Install this script via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
 
 ## Optionals
-- Global: https://t.me/ryukinotes/35
+Global: https://t.me/ryukinotes/35
 
 ## Troubleshootings
-- Global: https://t.me/ryukinotes/34
+Global: https://t.me/ryukinotes/34
 
 ## Support & Bug Report
 - https://t.me/ryukinotes/54
@@ -27,10 +36,10 @@
 ## Credits and Contributors
 - @HuskyDG
 - https://t.me/androidryukimodsdiscussions
-- You can contribute ideas about this Magisk Module here: https://t.me/androidappsportdevelopment
+- You can contribute ideas about this script here: https://t.me/androidappsportdevelopment
 
 ## Sponsors
-- https://t.me/ryukinotes/25
+https://t.me/ryukinotes/25
 
 
 
